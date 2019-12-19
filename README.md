@@ -1,12 +1,8 @@
-## JPEG-Compression Artifact Removal
-
-------
+# JPEG-Compression Artifact Removal
 
 Image JPEG-Compression Artifact Removal using Deep Convolutional Neural Networks.
 
-### Install Required Packages
-
-------
+## Install Required Packages
 
 First ensure that you have installed the following required packages:
 
@@ -22,10 +18,7 @@ pip install json,importlib,argparse
 
 See requirements.txt for details.
 
-### Folder Structure
-
-------
-
+## Folder Structure
 ```
 ├── main.py             - that is responsible for the whole pipeline.
 │
@@ -56,9 +49,7 @@ See requirements.txt for details.
      └── utils.py       - util functions for parsing arguments.
 ```
 
-### Dataset
-
-------
+## Dataset
 
 Download high resolution images for training. 
 
@@ -66,9 +57,7 @@ Here I used images from DIV2K - train - HR dataset as label.
 
 No need for downloading the low resolution images as data, `sr_data_loader.py` will add JPEG compression to the label and generate the training data. 
 
-### Getting Started
-
-------
+## Getting Started
 
 - Download your dataset and change the data path in `sr_config.json`
 
@@ -86,7 +75,4 @@ python main.py -c ./config/sr_config.json
 tensorboard --logdir=./log/ --port=1234
 ```
 
-### Demo
-
-------
-
+## Demo
