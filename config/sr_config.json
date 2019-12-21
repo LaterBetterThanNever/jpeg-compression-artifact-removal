@@ -1,0 +1,31 @@
+{
+  "info": {
+    "name": "Super_Resolution_Based_On_DCT"
+  },
+  "trainer":{
+    "learning_rate": 1e-4,
+    "num_epochs": 10000,
+    "batch_size": 32,
+    "validation_split":0.25
+  },
+  "path":{
+    "data_path": "/home/wuyue/DATASET/DIV2K/DIV2K_valid_HR/",
+    "chache_path": "./log/chache/"
+  },
+  "process_paras": {
+    "compress_value": 20,
+    "unsharp_mask_amount": 0.2,
+    "unsharp_mask_sigma": 2.0,
+    "patch_size": 128,
+    "patch_stride": 64,
+    "gaussian_sigma": 0.2
+  },
+  "callbacks":{
+    "checkpoint_monitor": "val_loss",
+    "checkpoint_mode": "min",
+    "checkpoint_save_best_only": true,
+    "checkpoint_save_weights_only": true,
+    "checkpoint_verbose": true,
+    "tensorboard_write_graph": true
+  }
+}
