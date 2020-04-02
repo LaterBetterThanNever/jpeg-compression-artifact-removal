@@ -76,3 +76,6 @@ tensorboard --logdir=./log/ --port=1234
 ```
 
 ## Demo
+![image](https://github.com/LaterBetterThanNever/Thesis/blob/master/%E5%9B%BE%E8%A1%A8%E6%95%B0%E6%8D%AE/DMCNN/DMCNN_a_concate.png)
+![image](https://github.com/LaterBetterThanNever/Thesis/blob/master/%E5%9B%BE%E8%A1%A8%E6%95%B0%E6%8D%AE/DMCNN/DMCNN_b_concate.png)
+![image](https://github.com/LaterBetterThanNever/Thesis/blob/master/%E5%9B%BE%E8%A1%A8%E6%95%B0%E6%8D%AE/DMCNN/DMCNN_c_concate.png)
